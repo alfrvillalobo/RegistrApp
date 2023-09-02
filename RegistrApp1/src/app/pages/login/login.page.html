@@ -1,0 +1,28 @@
+<ion-content [fullscreen] = "true" class="fondo">  
+  <ion-header>
+    <ion-toolbar>
+      <ion-button style="color: aliceblue;" (click)="logOut()" slot="start">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-title class="ion-text-center" style="color: aliceblue">Iniciar Sesión</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    
+      <ion-card>
+        <ion-item>
+          <ion-label position="floating">Correo Electrónico</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-card>
+
+      <ion-button expand="full" color="light">Iniciar Sesión</ion-button>
+      
+      <p class="ion-text-center">¿No tienes una cuenta? <a class="ion-text-center" routerLink="/registro">Regístrate</a></p>
+    
+</ion-content>

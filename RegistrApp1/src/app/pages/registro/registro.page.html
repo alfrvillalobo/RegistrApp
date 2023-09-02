@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button (click)="logOut()" slot="start">
+      <ion-icon name="arrow-back-circle-outline"></ion-icon>
+    </ion-button>
+    <ion-title class="ion-text-center">
+      Registro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Nombre</ion-label>
+    <ion-input [(ngModel)]="userData.nombre" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>RUT</ion-label>
+    <ion-input [(ngModel)]="userData.rut" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input [(ngModel)]="userData.email" type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Carrera</ion-label>
+    <ion-input [(ngModel)]="userData.carrera" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Sede</ion-label>
+    <ion-input [(ngModel)]="userData.sede" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input [(ngModel)]="userData.contrasena" type="password"></ion-input>
+  </ion-item>
+  <ion-button expand="full" color="primary">Registrar</ion-button>
+</ion-content>
