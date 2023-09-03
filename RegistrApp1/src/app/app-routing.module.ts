@@ -19,6 +19,26 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'main',
+    loadChildren: () => import('./pages/main/main.module').then( m => m.MainPageModule)
+  },
+  {
+    path: 'recuperar-clave',
+    loadChildren: () => import('./pages/recuperar-clave/recuperar-clave.module').then( m => m.RecuperarClavePageModule)
+  },
+  {
+    path: 'escanear',
+    loadChildren: () => import('./pages/escanear/escanear.module').then( m => m.EscanearPageModule)
+  },
+  {
+    path: 'asistencia',
+    loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
+  },
 ];
 
 @NgModule({
