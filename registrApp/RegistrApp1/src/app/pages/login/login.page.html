@@ -1,0 +1,32 @@
+<ion-content>
+
+  <div class="sesion-contend">
+    <ion-header>
+      <ion-toolbar>
+        <ion-button (click)="logOut()" slot="start">
+          <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        </ion-button>
+        <ion-title>Iniciar Sesión</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+<div class="datosLogin">
+  <ion-card>
+    <ion-item>
+      <ion-input label="Email" [(ngModel)]="email" type="email"></ion-input>
+        </ion-item>
+      <ion-item>
+        <ion-input label="Contraseña" [(ngModel)]="contrasena" type="password"></ion-input>
+      </ion-item>
+  </ion-card>
+</div>
+
+<div>
+  <ion-button class="buttonLogin" (click)="login() " expand="full" color="light">Iniciar Sesión</ion-button>
+</div>
+
+<p class="ion-text-center">¿No tienes una cuenta? <ion-button (click)="registro()">Regístrate</ion-button></p>
+<p class="ion-text-center">¿Olvidaste tu cuenta? <ion-button (click)="recuperar()">Recuperar</ion-button></p>
+</ion-content>
+    

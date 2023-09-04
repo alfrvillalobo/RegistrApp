@@ -1,0 +1,17 @@
+.ion-text-center{
+    color: white;
+}
+.datosLogin{
+    margin-top: 50px;
+}
+.buttonLogin{
+    margin-top: 30px;
+}
+
+.sesion-contend{
+    text-align: center;
+    flex: 1; /* Esto ayuda a centrar verticalmente en el ion-toolbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
