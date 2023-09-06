@@ -1,0 +1,63 @@
+<div class="tittle-main-user">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>Asistencia</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/main"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</div>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <!-- Primer ion-card -->
+    <ion-card (click)="toggleInfo1()">
+      <ion-card-header>
+        <ion-card-title>Ingles Elemental</ion-card-title>
+        <ion-card-subtitle>31/08/23</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content *ngIf="showInfo1">
+        Tu porcentaje de asistencia es muy alto. Felicitaciones!
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Segundo ion-card -->
+    <ion-card (click)="toggleInfo2()">
+      <ion-card-header>
+        <ion-card-title>Portafolio Final</ion-card-title>
+        <ion-card-subtitle>1/09/23</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content *ngIf="showInfo2">
+        No faltes. Puedes reprobar.
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Tercer ion-card -->
+    <ion-card (click)="toggleInfo3()">
+      <ion-card-header>
+        <ion-card-title>Arquitectura</ion-card-title>
+        <ion-card-subtitle>4/09/23</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content *ngIf="showInfo3">
+        Recuerda No faltar!. Esta clase requiere mucho papeleo
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Cuarto ion-card -->
+    <ion-card (click)="toggleInfo4()">
+      <ion-card-header>
+        <ion-card-title>Aplicaciones Moviles</ion-card-title>
+      <ion-card-subtitle>5/09/23</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content *ngIf="showInfo4">
+        Nunca faltes a Aplicaciones Moviles. Esta clase requiere 100% Tu asistencia!
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+</ion-content>

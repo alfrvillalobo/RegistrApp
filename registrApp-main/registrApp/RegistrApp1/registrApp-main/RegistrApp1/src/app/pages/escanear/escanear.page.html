@@ -1,0 +1,20 @@
+<ion-content>
+  <div class="sesion-contend">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Codigo QR</ion-title>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/main"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <div class="img-qr">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png" alt="">
+  </div>
+  <div>
+    <ion-button class="editButton" expand="full" (click)="showQRAlert()">Escanear</ion-button>
+  </div>
+
+</ion-content>
