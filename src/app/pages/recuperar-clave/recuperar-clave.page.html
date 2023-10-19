@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="tittle-nav">
+    <ion-title>Recuperar Clave</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="icon-recuperar">
+    <ion-icon name="people-circle-outline"></ion-icon>
+  </div>
+  <div class="tittle-recuperar">
+    <h1>Ingrese Su Correo</h1>
+  </div>
+  
+  <div class="label-email-recuperar">
+    <ion-card>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="email" type="email"></ion-input>
+      </ion-item>
+    </ion-card>
+  </div>
+  
+  <div class="recuperar-button">
+    <ion-button expand="full" (click)="resetPassword()">Recuperar</ion-button>
+  </div>
+
+</ion-content>
+

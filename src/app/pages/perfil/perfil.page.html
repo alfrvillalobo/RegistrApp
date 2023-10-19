@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Perfil
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="perfil-info">
+    <ion-icon name="person-circle-outline" class="perfil-icon"></ion-icon>
+    <h2>{{ nombreUsuario }}</h2>
+  </div>
+  
+</ion-content>

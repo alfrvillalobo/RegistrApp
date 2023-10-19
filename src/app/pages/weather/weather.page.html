@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Weather App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="city" (ionInput)="onSearchInput($event)"></ion-searchbar>
+  <ion-button (click)="searchWeather()">Buscar Clima</ion-button>
+
+  <ion-card *ngIf="weatherData">
+    <ion-card-header>
+      {{ weatherData.name }}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label>{{ weatherData.weather[0].description }}</ion-label>
+      <ion-label>Temperatura: {{ weatherData.main.temp }}°C</ion-label>
+      <ion-label>Temperatura Mínima: {{ weatherData.main.temp_min }}°C</ion-label>
+      <ion-label>Temperatura Máxima: {{ weatherData.main.temp_max }}°C</ion-label>
+      <ion-label>Humedad: {{ weatherData.main.humidity }}%</ion-label>
+      <ion-label>Velocidad del viento: {{ weatherData.wind.speed }} m/s</ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

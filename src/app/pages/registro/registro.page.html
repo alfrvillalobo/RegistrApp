@@ -1,0 +1,41 @@
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title class="ion-text-center">
+        Registro
+      </ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+
+    <div class="icon-register">
+      <ion-icon name="person-add-outline"></ion-icon>
+    </div>
+
+  
+    <ion-content [fullscreen]="true">
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input [(ngModel)]="nombre" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Correo Electrónico</ion-label>
+          <ion-input [(ngModel)]="email" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="contrasena" type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+  
+<div>
+  <ion-button expand="full" color="primary" (click)="registro()" class="buttom-registro">Registrar</ion-button>
+</div>
+
+
+</ion-content>
